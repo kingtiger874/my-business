@@ -18,40 +18,41 @@ const testimonials: Testimonial[] = [
   {
     name: "John D.",
     feedback:
-      "Thanks to this program, I secured a U.S. remote job with a 3x salary increase!",
+      "As a software engineer from Canada, this program completely transformed my career! I secured a high-paying U.S. remote job with a 3x salary increase—life-changing!",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     name: "Carlos M.",
     feedback:
-      "I landed a senior developer role in a top tech company within months!",
+      "I'm Carlos from Brazil, and this program was a game-changer! Within months, I landed a senior developer role at a top tech company, and my career skyrocketed!",
     image: "https://randomuser.me/api/portraits/men/36.jpg",
   },
   {
     name: "David R.",
     feedback:
-      "The structured process helped me transition smoothly into remote work.",
+      "Coming from Spain, transitioning to remote work felt overwhelming, but this structured process made it seamless! I now work remotely with an amazing global team.",
     image: "https://randomuser.me/api/portraits/men/28.jpg",
   },
   {
     name: "Michael T.",
     feedback:
-      "The mentorship and guidance I received were outstanding.",
+      "As an engineer from Germany, I was looking for the right guidance to break into remote roles. The mentorship here was outstanding—I felt fully prepared for every step!",
     image: "https://randomuser.me/api/portraits/men/40.jpg",
   },
   {
     name: "James K.",
     feedback:
-      "This changed my life! The support during interviews was invaluable.",
+      "I'm James from the UK, and this program changed my life! The hands-on support during interview prep was invaluable, and now I have my dream remote job!",
     image: "https://randomuser.me/api/portraits/men/50.jpg",
   },
   {
     name: "Robert N.",
     feedback:
-      "This program gave me confidence and helped me ace my interviews!",
+      "Being from Australia, I always wanted to work remotely for U.S. companies. This program gave me the confidence and skills to ace my interviews and make it happen!",
     image: "https://randomuser.me/api/portraits/men/44.jpg",
   },
 ];
+
 
 const SuccessStories: FC = () => {
   return (
@@ -78,7 +79,8 @@ const SuccessStories: FC = () => {
             1024: { slidesPerView: 3 }, // Desktop
           }}
           pagination={{ clickable: true }}
-          navigation
+          navigation={false}
+          loop={true}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           className="mt-8"
         >

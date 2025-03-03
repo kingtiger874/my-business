@@ -3,18 +3,18 @@ import { motion } from 'framer-motion';
 
 const services = [
   {
-    name: 'Investor to Talents',
-    description: 'We connect investors with top talent, creating pathways to success.',
+    name: 'Invest In Talents',
+    description: 'We recognize your potential and provide the resources, support, and opportunities needed for your success and growth.',
     icon: Handshake,
   },
   {
     name: 'US Citizenship Assistance',
-    description: 'We help guide you through the process if applicable.',
+    description: 'We offer full support for U.S. citizenship and employment compliance, including background checks.',
     icon: Landmark,
   },
   {
     name: 'High-Salary Remote Job Interviews',
-    description: 'We arrange interviews with leading US companies offering competitive salaries.',
+    description: 'We arrange daily interviews with top US companies offering competitive salaries—land a job in a week if you are skilled.',
     icon: Briefcase,
   },
   {

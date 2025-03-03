@@ -114,7 +114,7 @@ function App() {
               <motion.a
                 key={item.id}
                 href={`#${item.id}`}
-                className={`text-sm font-medium leading-6 transition-all duration-200 transform hover:scale-105 relative ${activeSection === item.id ? 'text-indigo-600 font-bold' : 'text-gray-800 hover:text-indigo-600'
+                className={`text-sm font-bold leading-6 transition-all duration-200 transform hover:scale-105 relative ${activeSection === item.id ? 'text-indigo-600 font-bold' : 'text-gray-500 hover:text-indigo-600'
                   }`}
                 onClick={(e) => {
                   e.preventDefault();

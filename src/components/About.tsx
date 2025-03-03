@@ -18,7 +18,7 @@ const About = () => {
         <div className="grid grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2">
           <motion.div
             className="relative lg:order-last"
-            initial="hidden"
+            // initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeIn}
@@ -54,7 +54,7 @@ const About = () => {
             <div>
               <motion.h2
                 className="text-base font-semibold leading-7 text-indigo-600"
-                initial="hidden"
+                // initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeIn}
@@ -64,7 +64,7 @@ const About = () => {
               </motion.h2>
               <motion.p
                 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
-                initial="hidden"
+                // initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-100px" }}
                 variants={fadeIn}

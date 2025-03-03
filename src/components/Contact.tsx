@@ -28,7 +28,7 @@ const Contact = () => {
           <h2 className="text-base font-semibold leading-7 text-indigo-600">Contact Us</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get in touch</p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            We'd love to hear from you. If this opportunity matches your skills and interests, don’t hesitate to get in touch! You can earn a desirable additional income even if you have a current job.
+            We'd love to hear from you. You can earn a desirable additional income even if you have a current job. If this opportunity matches your skills and interests, don’t hesitate to get in touch! 
           </p>
         </motion.div>
         <div className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-2">
