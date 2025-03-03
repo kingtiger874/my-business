@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X, Building2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
-import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SuccessStories from './components/SuccessStories';
-import ContactInfo from './components/ContactInfo';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGem } from '@fortawesome/free-solid-svg-icons'; // Import the bolt icon
+
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,10 +21,10 @@ function App() {
     if (section) {
       // Close mobile menu if open
       setMobileMenuOpen(false);
-      
+
       // Set active section
       setActiveSection(sectionId);
-      
+
       // Smooth scroll to section
       section.scrollIntoView({ behavior: 'smooth' });
     }
@@ -33,7 +34,7 @@ function App() {
   useEffect(() => {
     const handleScroll = () => {
       const sections = ['hero', 'about', 'services', 'success-stories', 'team', 'contact'];
-      
+
       // Find the section that is currently in view
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -51,7 +52,7 @@ function App() {
     window.addEventListener('scroll', handleScroll);
     // Initial check
     handleScroll();
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -76,16 +77,19 @@ function App() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <a 
-              href="#hero" 
+            <a
+              href="#hero"
               className="-m-1.5 p-1.5 flex items-center gap-2"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection('hero');
               }}
             >
-              <Building2 className="h-8 w-auto text-indigo-600" />
-              <span className="text-2xl font-semibold text-gray-900 tracking-wide" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.1)' }}>YoungInvest</span>
+              <span className="text-3xl font-extrabold tracking-wide" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
+                {/* <FontAwesomeIcon icon={faGem} className="text-green-300 mr-2" style={{ fontSize: '1.8rem' }} /> */}
+                <span className="text-purple-500">💎YOUNG</span>
+                <span className="text-pink-500 ml-2">INVEST</span>
+              </span>
             </a>
           </motion.div>
           <div className="flex lg:hidden">
@@ -110,9 +114,8 @@ function App() {
               <motion.a
                 key={item.id}
                 href={`#${item.id}`}
-                className={`text-sm font-medium leading-6 transition-all duration-200 transform hover:scale-105 relative ${
-                  activeSection === item.id ? 'text-indigo-600 font-bold' : 'text-gray-800 hover:text-indigo-600'
-                }`}
+                className={`text-sm font-medium leading-6 transition-all duration-200 transform hover:scale-105 relative ${activeSection === item.id ? 'text-indigo-600 font-bold' : 'text-gray-800 hover:text-indigo-600'
+                  }`}
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection(item.id);
@@ -154,8 +157,8 @@ function App() {
                 transition={{ type: 'spring', damping: 25, stiffness: 300 }}
               >
                 <div className="flex items-center justify-between">
-                  <a 
-                    href="#hero" 
+                  <a
+                    href="#hero"
                     className="-m-1.5 p-1.5 flex items-center gap-2"
                     onClick={(e) => {
                       e.preventDefault();
@@ -187,11 +190,10 @@ function App() {
                             e.preventDefault();
                             scrollToSection(item.id);
                           }}
-                          className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${
-                            activeSection === item.id 
-                              ? 'text-indigo-600 bg-indigo-50' 
-                              : 'text-gray-900 hover:bg-gray-50'
-                          }`}
+                          className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${activeSection === item.id
+                            ? 'text-indigo-600 bg-indigo-50'
+                            : 'text-gray-900 hover:bg-gray-50'
+                            }`}
                           whileHover={{ x: 5, backgroundColor: 'rgba(79, 70, 229, 0.1)' }}
                           transition={{ type: 'spring', stiffness: 400 }}
                         >
