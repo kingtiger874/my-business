@@ -33,7 +33,7 @@ const Contact = () => {
         </motion.div>
         <div className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-2">
           <motion.div
-            className="relative lg:order-last pt-20 pl-20"
+            className="relative lg:order-last pt-12 pl-20"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
