@@ -28,9 +28,10 @@ const Contact = () => {
           <h2 className="text-base font-semibold leading-7 text-indigo-600">Contact Us</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Get in touch</p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            We'd love to hear from you. You can earn <strong>a desirable additional income</strong>
-            (<strong>$1K/month</strong> in just <em>1 hour a day</em>) even if you have a current job.
-            If this opportunity matches your <strong>skills and interests</strong>, don’t hesitate to get in touch!
+            We'd love to hear from you. You can earn a desirable additional income
+            <br />
+            <span className="text-red-600 font-bold italic">($1K/month in just 1 hour a day)</span>
+            &nbsp;even if you have a current job. If this opportunity matches your skills and interests, don’t hesitate to get in touch!
           </p>
 
         </motion.div>

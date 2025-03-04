@@ -7,13 +7,13 @@ const Hero = () => {
       <div
         className="relative py-24 sm:py-32 lg:py-48 bg-cover bg-center"
         style={{
-          // backgroundImage:"url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
-          backgroundImage: "url('/business.PNG')",
+          backgroundImage:"url('https://images.unsplash.com/photo-1599707367072-cd6ada2bc375?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          // backgroundImage: "url('/business.PNG')",
 
         }}
       >
         {/* Using bg-black/50 for a semi-transparent black background */}
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm z-10" />
+        <div className="absolute inset-0 bg-black/50 backdrop-blur-xs z-10" />
 
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8 text-center text-white z-20">
           <motion.div
