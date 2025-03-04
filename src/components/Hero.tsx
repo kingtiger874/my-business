@@ -37,8 +37,8 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              If you are an <span className="font-bold text-pink-400">experienced software developer</span> with excellent
-              <span className="font-bold text-pink-400"> English communication skills</span>, we would like to invest in you!
+              If you are an <span className="font-bold text-purple-400">experienced software developer</span> with excellent
+              <span className="font-bold text-purple-400"> English communication skills</span>, we would like to invest in you!
             </motion.p>
             <motion.div
               className="mt-10 flex items-center justify-center gap-x-6"
