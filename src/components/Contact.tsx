@@ -1,4 +1,3 @@
-import React from 'react';
 import { Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,7 +6,7 @@ import { faWhatsapp, faTelegram } from '@fortawesome/free-brands-svg-icons';
 const Contact = () => {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
-    visible: (custom) => ({
+    visible: (custom: number) => ({
       opacity: 1,
       y: 0,
       transition: { delay: custom * 0.1, duration: 0.6 }
@@ -113,9 +112,6 @@ const Contact = () => {
               </motion.div>
               <div>
                 <h3 className="text-base font-semibold text-gray-900">Phone</h3>
-                <p className="mt-2 leading-7 text-gray-600">
-                  <a href="tel:+17867801983">+1 (786) 780-1983</a>
-                </p>
                 <p className="mt-2 leading-7 text-gray-600">
                   <a href="tel:+14793391597">+1 (479) 339-1597</a>
                 </p>
