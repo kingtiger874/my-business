@@ -17,7 +17,7 @@ const About = () => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-y-16 gap-x-8 lg:grid-cols-2">
           <motion.div
-            className="relative lg:order-last"
+            className="relative lg:order-last pt-20"
             // initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -89,7 +89,7 @@ const About = () => {
                 extensive global experience as software engineers, we are committed to creating transformative opportunities 
                 that dismantle barriers, foster borderless innovation, and empower global growth.
               </motion.p>
-              <div className="mt-10 max-w-xl space-y-8 pt-10 text-base leading-7 text-gray-600">
+              <div className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600">
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
