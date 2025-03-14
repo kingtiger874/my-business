@@ -80,10 +80,14 @@ const About = () => {
                 variants={fadeIn}
                 custom={3}
               >
-                We are a forward-thinking investment group connecting talented software developers worldwide
-                with high-paying remote U.S. jobs. Inspired by our founder’s global experience as a software
-                engineer, we break barriers and create life-changing opportunities, enabling innovation and
-                growth without borders.
+                Countless remote work opportunities exist in the US, yet many are limited to local developers.
+                Talented international developers often face barriers due to their nationality, leaving them without
+                the opportunities they truly deserve.
+
+                We are a visionary investment group dedicated to bridging this gap by connecting skilled software 
+                developers worldwide with high-paying remote jobs in the US. Drawing inspiration from our founders’ 
+                extensive global experience as software engineers, we are committed to creating transformative opportunities 
+                that dismantle barriers, foster borderless innovation, and empower global growth.
               </motion.p>
               <div className="mt-10 max-w-xl space-y-8 pt-10 text-base leading-7 text-gray-600">
                 <motion.div
